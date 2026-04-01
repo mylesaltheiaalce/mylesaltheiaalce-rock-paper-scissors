@@ -4,10 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <p>
-        the quick brown fox jumps over the lazy dog
-    </p>
+
+    <h1>Rock - Paper - Scissors</h1>
+
+    <div id="choices">
+    <button onclick="playGAme('rock')">rock</button>
+    <button onclick="playGAme('paper')">paper</button>
+    <button onclick="playGAme('scissors')">scissors</button>
+    </div>
+
+    <div id="playerDisplay">Player</div>
+    <div id="playerGame">Computer</div>
+    <div id="resultDisplay"></div>
+    
+    <div class="scoreDisplay">Player Score:
+        <span id="playerScoreDisplay">0</span>
+    </div>
+
+    <div class="scoreDisplay">Computer Score:
+        <span id="computerScoreDisplay">0</span>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
