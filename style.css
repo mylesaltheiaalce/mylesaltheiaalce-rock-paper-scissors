@@ -36,3 +36,10 @@ body {
     background-color: #ff2e63;
     transform: scale(1.1);
 }
+
+.result-display {
+    margin-top: 20px;
+    padding: 15px;
+    background: #0f3460;
+    border-radius: 10px;
+}
