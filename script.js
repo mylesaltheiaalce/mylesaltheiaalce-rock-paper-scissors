@@ -9,3 +9,9 @@ let playerScore = 0;
 let computerScore = 0;
 
 const choices = ['rock', 'paper', 'scissors'];
+
+buttons.forEach(button => {
+    button.addEventListener('click', () => {
+        const playerChoice = button.id;
+        const computerChoice = choices[Math.floor(Math.random() * 3)];
+        const result = getResult(playerChoice, computerChoice);
