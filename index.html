@@ -3,29 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Rock Paper Scissors</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <h1>Rock - Paper - Scissors</h1>
+    <div class="game-container">
+        <h1>Rock Paper Scissors</h1>
+        
+        <div class="choices">
+            <button class="choice-btn" id="rock">✊ Rock</button>
+            <button class="choice-btn" id="paper">✋ Paper</button>
+            <button class="choice-btn" id="scissors">✌️ Scissors</button>
+        </div>
 
-    <div id="choices">
-    <button onclick="playGAme('rock')">rock</button>
-    <button onclick="playGAme('paper')">paper</button>
-    <button onclick="playGAme('scissors')">scissors</button>
-    </div>
+        <div class="result-display">
+            <p id="player-choice">Player: </p>
+            <p id="computer-choice">Computer: </p>
+            <h2 id="game-result">Choose your weapon!</h2>
+        </div>
 
-    <div id="playerDisplay">Player</div>
-    <div id="playerGame">Computer</div>
-    <div id="resultDisplay"></div>
-    
-    <div class="scoreDisplay">Player Score:
-        <span id="playerScoreDisplay">0</span>
-    </div>
-
-    <div class="scoreDisplay">Computer Score:
-        <span id="computerScoreDisplay">0</span>
+        <div class="score-board">
+            <p>Player Score: <span id="player-score">0</span></p>
+            <p>Computer Score: <span id="computer-score">0</span></p>
+        </div>
     </div>
 
     <script src="script.js"></script>
