@@ -15,3 +15,12 @@ buttons.forEach(button => {
         const playerChoice = button.id;
         const computerChoice = choices[Math.floor(Math.random() * 3)];
         const result = getResult(playerChoice, computerChoice);
+        
+        playerDisplay.textContent = Player: ${playerChoice};
+        computerDisplay.textContent = Computer: ${computerChoice};
+        resultDisplay.textContent = 
+        result;
+
+        
+
+
