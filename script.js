@@ -21,6 +21,10 @@ buttons.forEach(button => {
         resultDisplay.textContent = 
         result;
 
-        
+        if (result === "YOU WIN!") {
+        playerScore++;
+        } else if (result === "YOU LOSE!") {
+        computerScore++;
+        }
 
 
