@@ -27,4 +27,8 @@ buttons.forEach(button => {
         computerScore++;
         }
 
+        playerScoreDisplay.textContent = playerScore;
+        computerScoreDisplay.textContent = computerScore; });
+});
+
 
