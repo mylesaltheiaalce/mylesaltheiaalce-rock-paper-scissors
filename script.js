@@ -31,4 +31,20 @@ buttons.forEach(button => {
         computerScoreDisplay.textContent = computerScore; });
 });
 
+function getResult(player, computer) {
+    if (player === computer) {
+        return "IT'S A TIE!";
+    }
+
+    if (
+        (player === 'rock' && computer === 'scissors') ||
+        (player === 'paper' && computer === 'rock') ||
+        (player === 'scissors' && computer === 'paper')
+    ) {
+        return "YOU WIN!";
+    } else {
+        return "YOU LOSE!";
+    }
+}
+
 
