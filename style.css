@@ -50,3 +50,17 @@ body {
     margin-top: 20px;
     font-weight: bold;
 }
+
+#reset-btn {
+    margin-top: 20px;
+    padding: 10px 30px;
+    background: rgba(33, 194, 162, 0.8);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#reset-btn:hover {
+    background: #0f3460;
+}
