@@ -16,19 +16,19 @@ buttons.forEach(button => {
         const computerChoice = choices[Math.floor(Math.random() * 3)];
         const result = getResult(playerChoice, computerChoice);
         
-        playerDisplay.textContent = Player: ${playerChoice};
-        computerDisplay.textContent = Computer: ${computerChoice};
-        resultDisplay.textContent = 
-        result;
+        playerDisplay.textContent = `Player: ${playerChoice}`;
+        computerDisplay.textContent =` Computer: ${computerChoice}`;
+        resultDisplay.textContent = result;
 
         if (result === "YOU WIN!") {
-        playerScore++;
+            playerScore++;
         } else if (result === "YOU LOSE!") {
-        computerScore++;
+            computerScore++;
         }
 
         playerScoreDisplay.textContent = playerScore;
-        computerScoreDisplay.textContent = computerScore; });
+        computerScoreDisplay.textContent = computerScore; 
+    });
 });
 
 function getResult(player, computer) {
