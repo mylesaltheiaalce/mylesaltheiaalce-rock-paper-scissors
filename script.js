@@ -4,6 +4,7 @@ const computerDisplay = document.getElementById('computer-choice');
 const resultDisplay = document.getElementById('game-result');
 const playerScoreDisplay = document.getElementById('player-score');
 const computerScoreDisplay = document.getElementById('computer-score');
+const resetBtn = document.getElementById('reset-btn');
 
 let playerScore = 0;
 let computerScore = 0;
@@ -31,6 +32,18 @@ buttons.forEach(button => {
     });
 });
 
+
+resetBtn.addEventListener('click', () => {
+    playerScore = 0;
+    computerScore = 0;
+    playerScoreDisplay.textContent = 0;
+    computerScoreDisplay.textContent = 0;
+    playerDisplay.textContent = "Player: ";
+    computerDisplay.textContent = "Computer: ";
+    resultDisplay.textContent = "Choose your weapon!";
+});
+
+
 function getResult(player, computer) {
     if (player === computer) {
         return "IT'S A TIE!";
@@ -46,5 +59,7 @@ function getResult(player, computer) {
         return "YOU LOSE!";
     }
 }
+
+
 
 
