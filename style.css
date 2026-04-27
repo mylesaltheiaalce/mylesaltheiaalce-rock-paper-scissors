@@ -20,13 +20,23 @@ body {
     cursor: pointer;
     border: none;
     border-radius: 8px;
-    background-color: #e94560;
     color: white;
     transition: transform 0.2s, background-color 0.2s;
 }
 
+#rock {
+    background-color: #f9c9d5;
+}
+
+#paper {
+    background-color: #aef0c8; 
+}
+
+#scissors {
+    background-color:#d1c4e9; 
+}
+
 .choice-btn:hover {
-    background-color: #ff2e63;
     transform: scale(1.1);
 }
 
