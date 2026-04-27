@@ -20,6 +20,10 @@ h1 {
 
 .choices {
     margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* better than margins */
 }
 
 .choice-btn {
@@ -52,25 +56,40 @@ h1 {
 .result-display {
     margin-top: 20px;
     padding: 15px;
-    background: #0f3460;
+    background: #ffffff;
     border-radius: 10px;
+    border: 2px solid #fbf5c1;
+}
+
+h2 {
+    text-align: center;
 }
 
 .score-board {
     display: flex;
-    justify-content: space-around;
-    margin-top: 20px;
+    justify-content: space-between;
+    margin-top: 50px;
     font-weight: bold;
+    border: 2px solid #fbf5c1;
+    padding: 15px 25px;
+    border-radius: 10px;
+    background-color: #fef9d8;
+    width: 320px;
 }
 
 #reset-btn {
     margin-top: 20px;
-    padding: 10px 30px;
-    background: rgba(33, 194, 162, 0.8);
+    padding: 15px 45px;
+    width: 350px;
+    font-size: 1.1rem;
+    background: #834d63;
     color: #fff;
     border: none;
     border-radius: 8px;
     cursor: pointer;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #reset-btn:hover {
