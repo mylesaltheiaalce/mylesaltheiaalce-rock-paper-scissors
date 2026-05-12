@@ -60,17 +60,23 @@ h1 {
     background: #ffffff;
     border-radius: 10px;
     border: 2px solid #fbf5c1;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
 }
 
 .result-top {
     display: flex;
     justify-content: center;
     gap: 40px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
-h2 {
-    text-align: center;
+#game-result {
+    font-size: 1rem;
+    margin: 0;
 }
 
 .score-board {
@@ -82,13 +88,14 @@ h2 {
     padding: 15px 25px;
     border-radius: 10px;
     background-color: #ffffff;
-    width: 320px;
+    width: 100px;
+    box-sizing: border-box;
 }
 
 #reset-btn {
     margin-top: 20px;
     padding: 15px 45px;
-    width: 350px;
+    width: 100px;
     font-size: 1.1rem;
     background: #834d63;
     color: #fff;
@@ -98,6 +105,7 @@ h2 {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    box-sizing: border-box;
 }
 
 #reset-btn:hover {
@@ -109,4 +117,6 @@ h2 {
     padding: 25px;
     border-radius: 15px;
     background-color: #fffadf;
+    width: 400px;
+    box-sizing: border-box;
 }
